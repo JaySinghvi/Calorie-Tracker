@@ -1,4 +1,4 @@
-**########Calorie Tracker**
+**Calorie Tracker**
 
 pip install PyQt5
 pip install PyQt5-tools
@@ -8,3 +8,29 @@ pip install PyQt5Designer
 #python -m PyQt5.uic.pyuic -x "path_for_the_UI_file_generated_after_saving_project_on_qtdesigner" -o res_main.py
 
 This system is developed to help users to keep a track of their calories. In this I have created relations to store user details, ingredient details and dish details. The relations, dishes and ingredients are related to each by another relation named utilizes, which follows the logic that one dish can be made from many ingredients. Similarly the relations, users and dishes are related to each other by another relation named eats, which follows the logic that one user can eat many dishes. Moreover, the user can add the dish name and quantity they have eaten recently or in the past. Furthermore, the user can also view the history of dishes eaten and how many calories were consumed in a certain datetime range. Lastly I have also added the option to register a new user on the platform by entering their name, age, weight, height, email and password which will be inserted into the users table.
+
+**Objectives**
+
+1. To register users to the platform so that they can track their calories and stay healthy.
+2. To allow users to input the dish they had and at what time.
+3. To update calories each time they eat a new dish .
+4. To keep a track of dishes and calories a user eats in a user-specified date-time range.
+
+**Database Schema Required:**
+
+Users(u_id, u_name, age, weight, height, password, email)
+Ingredients(i_id, i_name, i_calorie)
+Dishes(d_id, d_name, d_calories)
+Eats(e_id, u_id, d_id, quantity, tot_calories, date_time)
+Utilizes(u_id , d_id, i_id, quantity)
+
+**Database Concepts**
+
+![image](https://user-images.githubusercontent.com/98965593/204648518-6ee94004-5b83-4fa7-a156-264e2e38513c.png)
+![203321800-be45c7b9-3d96![203321803-0dd40c18-6849-4b6f-84c2-c57a6aeaf3ae](https://user-images.githubusercontent.com/98965593/204648628-2954ee34-ce5b-4948-9934-877eaf96ab2b.png)
+-4f52-9216-bad9a87bbf5c](https://user-images.githubusercontent.com/98965593/204648602-7b9bec37-1aba-43e7-8954-289b8a5dcf24.png)
+![203321806-4c302a8d-d4fb-47b5-885f-e642c054b7f5](https://user-images.githubusercontent.com/98965593/204648661-3f04d91a-a771-4033-8f61-9dca74750397.png)
+![203321806-4c302a8d-d4fb-47b5-885f-e642c054b7f5](https://user-images.githubusercontent.com/98965593/204648699-d750ed77-30bf-4a66-a5a8-3d1fda054f8c.png)
+![203321808-9d80f3a6-2880-4194-95c5-d2ba7ec1dce9](https://user-images.githubusercontent.com/98965593/204648721-3882a6dc-7f90-49d9-b3b6-97d2c017b414.png)
+
+
