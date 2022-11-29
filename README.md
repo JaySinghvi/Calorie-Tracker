@@ -1,4 +1,5 @@
 Calorie Tracker
+
 Database Management Systems Course Project
 
 pip install PyQt5
